@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preedos Kenya Limited - Premier Elevator & Escalator Solutions</title>
+    <meta name="description" content="Leading elevator installation Kenya, escalator maintenance Nairobi, and lift services Kenya. Professional vertical transportation solutions for residential, commercial & industrial projects.">
+    <meta name="keywords" content="elevator installation Kenya, escalator maintenance Nairobi, lift services Kenya, vertical transportation solutions, elevator repair Kenya">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Hero section styles moved to main CSS */
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2.5rem 0 1rem;
+        }
+        
+        .btn {
+            background: #fbbf24;
+            color: #1e3a8a;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+            box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+        }
+        
+        .trust-indicators {
+            background: white;
+            padding: 4rem 0;
+        }
+        
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .trust-item {
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+        }
+        
+        .trust-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .trust-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e3a8a;
+            display: block;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+        
+        .trust-label {
+            color: #6b7280;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .services-preview {
+            padding: 6rem 0;
+            background: #f8fafc;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+        
+        .service-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .service-content {
+            padding: 2rem;
+        }
+        
+        .service-content h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .service-content p {
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .testimonials {
+            background: #1e3a8a;
+            color: white;
+            padding: 6rem 0;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #fbbf24;
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,0.2);
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            position: relative;
+            z-index: 2;
+            opacity: 0.9;
+        }
+        
+        .cta-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="https://i.postimg.cc/L662yv36/Screenshot-2-9-2025-14509.jpg" alt="Preedos Kenya Limited Logo" class="logo-img">
+                    <span class="logo-text">Preedos Kenya</span>
+                </a>
+                <div class="header-actions">
+                    <div class="emergency-contacts">
+                        <a href="https://wa.me/254791240000" class="emergency-contact" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Mr Rushab: +254 791 240 000</span>
+                        </a>
+                        <a href="https://wa.me/254706049004" class="emergency-contact" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Miss Palak: +254 706 049 004</span>
+                        </a>
+                        <a href="mailto:preedoskltd@gmail.com" class="emergency-contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>preedoskltd@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="100">East Africa's Premier Elevator & Escalator Solutions</h1>
+                <p data-aos="fade-up" data-aos-delay="200">German and Chinese technology. Local expertise. Since 2017, we've been perfecting the art of vertical transportation across East and Central Africa.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="300">
+                        <span>Get a Free Quote</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="350">
+                        <span>Our Services</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section" style="background: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 58, 138, 0.8)), url('https://i.postimg.cc/HxxMNTZ0/about-us-background.jpg') no-repeat center center/cover; color: white;">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="section-header" style="color: white; text-align: left; margin-bottom: 2.5rem;">
+                        <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 0.5rem; font-size: 2.5rem; color: white;">About Preedos Kenya</h2>
+                        <p style="font-size: 1.2rem; opacity: 0.9; color: white;">Perfecting vertical transportation since 2017</p>
+                    </div>
+                    
+                    <div class="mission-vision" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                        <div class="mission" style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; backdrop-filter: blur(5px);">
+                            <h3 style="color: #fbbf24; margin-top: 0;"><i class="fas fa-bullseye"></i> Our Mission</h3>
+                            <p style="color: white;">To provide competitive products and deliver industry-leading services and world-class customer care. Customer satisfaction is our top priority.</p>
+                        </div>
+                        <div class="vision" style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; backdrop-filter: blur(5px);">
+                            <h3 style="color: #fbbf24; margin-top: 0;"><i class="fas fa-eye"></i> Our Vision</h3>
+                            <p style="color: white;">To perfect the art of making elevators and escalators while achieving recognition globally. We aim to capture growth opportunities in emerging markets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-choose-us" style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; backdrop-filter: blur(5px); margin-bottom: 2rem;">
+                        <h3 style="color: #fbbf24; margin-top: 0;">Why Choose Preedos Kenya?</h3>
+                        <ul class="features-list" style="margin: 0; padding-left: 1.5rem;">
+                            <li><i class="fas fa-check-circle" style="color: #4ade80;"></i> <strong>Superior Quality:</strong> Exceeding worldwide standards with German and Chinese technology</li>
+                            <li><i class="fas fa-check-circle" style="color: #4ade80;"></i> <strong>Proven Experience:</strong> 5+ years of excellence in elevator solutions</li>
+                            <li><i class="fas fa-check-circle" style="color: #4ade80;"></i> <strong>Annual Capacity:</strong> Sourcing from facilities producing 1,000+ units annually</li>
+                            <li><i class="fas fa-check-circle" style="color: #4ade80;"></i> <strong>Market Leader:</strong> Major supplier across East and Central Africa</li>
+                            <li><i class="fas fa-check-circle" style="color: #4ade80;"></i> <strong>Reliable Support:</strong> Comprehensive after-sales service and maintenance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cta-buttons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#contact" class="btn" style="background: #fbbf24; color: #1e3a8a; border: none; font-weight: 600;">Get Your Free Consultation</a>
+                        <a href="#services" class="btn btn-outline" style="color: white; border-color: white;">Explore Our Services</a>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" style="position: relative;">
+                    <div class="experience-badge" style="position: absolute; top: -20px; right: -20px; background: #fbbf24; color: #1e3a8a; padding: 1rem; border-radius: 8px; text-align: center; z-index: 2; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <span class="years" style="display: block; font-size: 2rem; font-weight: 800; line-height: 1;">5+</span>
+                        <span style="font-weight: 600;">Years Experience</span>
+                    </div>
+                    <div style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);">
+                        <img src="https://images.unsplash.com/photo-1581093196270-1a374a9ab4b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Preedos Kenya Elevator Solutions" style="width: 100%; height: auto; display: block;">
+                    </div>
+                    
+                    <!-- Leadership Team -->
+                    <div class="leadership-section" style="margin-top: 2rem; background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; backdrop-filter: blur(5px);">
+                        <h3 style="color: #fbbf24; margin-top: 0;">Our Leadership</h3>
+                        <div class="leadership-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div class="leader-card" style="text-align: center;">
+                                <div class="leader-avatar" style="width: 80px; height: 80px; background: rgba(251, 191, 36, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem; color: #fbbf24;">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h4 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Mr. Rushabhkumar Jayantilal Doshi</h4>
+                                <p class="position" style="margin: 0; font-size: 0.9rem; color: #e2e8f0;">Chairman</p>
+                                <a href="tel:+254791240000" style="display: inline-flex; align-items: center; gap: 0.5rem; color: white; text-decoration: none; margin-top: 0.5rem; font-size: 0.9rem;">
+                                    <i class="fab fa-whatsapp" style="color: #25D366;"></i> +254 791 240 000
+                                </a>
+                            </div>
+                            <div class="leader-card" style="text-align: center;">
+                                <div class="leader-avatar" style="width: 80px; height: 80px; background: rgba(251, 191, 36, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem; color: #fbbf24;">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h4 style="margin: 0.5rem 0 0.25rem; font-size: 1rem;">Mrs. Palak Rajesh Kumar Patel</h4>
+                                <p class="position" style="margin: 0; font-size: 0.9rem; color: #e2e8f0;">Director</p>
+                                <a href="tel:+254706049004" style="display: inline-flex; align-items: center; gap: 0.5rem; color: white; text-decoration: none; margin-top: 0.5rem; font-size: 0.9rem;">
+                                    <i class="fab fa-whatsapp" style="color: #25D366;"></i> +254 706 049 004
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Portfolio</h2>
+                <p>Explore our recent projects and installations across East Africa</p>
+            </div>
+            
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://i.postimg.cc/LXs4T3By/e1.jpg" alt="Modern Elevator Installation">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Elevator Installation</h3>
+                                <p>Commercial Building, Nairobi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>UAP Old Mutual Tower</h3>
+                        <p>State-of-the-art elevator installation in Nairobi's business district, featuring high-speed travel and energy-efficient technology.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Commercial</span>
+                            <span class="portfolio-tag">High-Speed</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="hospitality" data-aos="fade-up" data-aos-delay="150">
+                    <div class="portfolio-image">
+                        <img src="https://i.postimg.cc/mD6L61mT/l1.jpg" alt="Luxury Elevator Interior">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Luxury Elevator Interior</h3>
+                                <p>5-Star Hotel, Mombasa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Sarova Whitesands</h3>
+                        <p>Custom-designed luxury elevator interiors for Mombasa's premier beachfront hotel, combining elegance with reliability.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Hospitality</span>
+                            <span class="portfolio-tag">Luxury</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://i.postimg.cc/y8XVCbLQ/l2.jpg" alt="High-Speed Elevator">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>High-Speed Elevator</h3>
+                                <p>Office Tower, Nairobi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Britam Tower</h3>
+                        <p>High-speed elevator installation in one of Nairobi's tallest buildings, featuring advanced destination dispatch technology.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Commercial</span>
+                            <span class="portfolio-tag">High-Tech</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="commercial" data-aos="fade-up" data-aos-delay="250">
+                    <div class="portfolio-image">
+                        <img src="https://i.postimg.cc/mrmBtFf7/l3.jpg" alt="Glass Elevator Project">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Glass Elevator</h3>
+                                <p>Shopping Mall, Westlands</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Two Rivers Mall</h3>
+                        <p>Panoramic glass elevators offering stunning views of the mall's central atrium and surrounding areas.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Commercial</span>
+                            <span class="portfolio-tag">Glass</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="healthcare" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="https://i.postimg.cc/W3tjrbTC/l4.jpg" alt="Hospital Elevator">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Hospital Elevator</h3>
+                                <p>Medical Center, Thika</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Thika Level 5 Hospital</h3>
+                        <p>Medical-grade elevators with specialized features for hospital use, including stretcher access and emergency power backup.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Healthcare</span>
+                            <span class="portfolio-tag">Medical</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="residential" data-aos="fade-up" data-aos-delay="350">
+                    <div class="portfolio-image">
+                        <img src="https://i.postimg.cc/Vsr0PznK/l5.webp" alt="Residential Lift">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Residential Lift</h3>
+                                <p>Luxury Villa, Karen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Karen Residence</h3>
+                        <p>Custom-designed residential elevator for a luxury home, featuring premium finishes and quiet operation.</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Residential</span>
+                            <span class="portfolio-tag">Luxury</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Lift Gallery Section -->
+    <section class="gallery-section" id="custom-designs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Custom Lift Designs</h2>
+                <p>Explore our collection of premium, customized elevator solutions tailored to your needs</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Design 1 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.postimg.cc/RFNq7Jfx/c1.jpg" alt="Modern glass elevator with panoramic views" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Panoramic Glass Elevator</h3>
+                            <p>Elegant design with 360° views for modern buildings</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Glass</span>
+                                <span class="gallery-tag">Modern</span>
+                                <span class="gallery-tag">Panoramic</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 2 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://i.postimg.cc/gkvjHWwj/c2.jpg" alt="Luxury elevator interior with wood paneling" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Luxury Wood Finish</h3>
+                            <p>Premium wooden interiors for a sophisticated and warm ambiance</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Wood</span>
+                                <span class="gallery-tag">Luxury</span>
+                                <span class="gallery-tag">Elegant</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 3 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.postimg.cc/Vkm67VMR/c3.jpg" alt="Sleek modern elevator with LED lighting" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Modern LED Elevator</h3>
+                            <p>Energy-efficient with customizable ambient lighting options</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">LED</span>
+                                <span class="gallery-tag">Modern</span>
+                                <span class="gallery-tag">Eco-Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 4 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://i.postimg.cc/7LQZZPRs/c4.jpg" alt="Spacious elevator with premium finishes" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Executive Cabin</h3>
+                            <p>Spacious design with premium materials and finishes</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Spacious</span>
+                                <span class="gallery-tag">Premium</span>
+                                <span class="gallery-tag">Executive</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 5 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://i.postimg.cc/7LQZZPRs/c4.jpg" alt="Minimalist elevator design with clean lines" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Minimalist Design</h3>
+                            <p>Clean lines and simple elegance for modern spaces</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Minimalist</span>
+                                <span class="gallery-tag">Modern</span>
+                                <span class="gallery-tag">Sleek</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 6 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://i.postimg.cc/prKWCfL4/c5.webp" alt="Futuristic elevator with advanced technology" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Futuristic Design</h3>
+                            <p>Cutting-edge technology meets modern aesthetics</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Futuristic</span>
+                                <span class="gallery-tag">High-Tech</span>
+                                <span class="gallery-tag">Innovative</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 7 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="350">
+                    <img src="https://i.postimg.cc/9FQbQwXK/c6.jpg" alt="Luxury hotel elevator with elegant design" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Hotel Luxury</h3>
+                            <p>Elegant design perfect for luxury hotels and resorts</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Luxury</span>
+                                <span class="gallery-tag">Hotel</span>
+                                <span class="gallery-tag">Elegant</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Design 8 -->
+                <article class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://i.postimg.cc/02d5J03J/c7.jpg" alt="Contemporary elevator interior with modern design" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Contemporary Classic</h3>
+                            <p>Timeless design with modern sensibilities</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Classic</span>
+                                <span class="gallery-tag">Timeless</span>
+                                <span class="gallery-tag">Elegant</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" data-aos="fade-up">
+                <a href="#contact" class="btn">
+                    <span>Request Custom Design</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section class="design-process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Design Process</h2>
+                <p>Streamlined workflows for exceptional results</p>
+            </div>
+            
+            <div class="process-tabs" data-aos="fade-up" role="tablist" aria-label="Service processes">
+                <button class="tab-btn active" 
+                        id="tab-installation" 
+                        data-tab="installation" 
+                        role="tab" 
+                        aria-selected="true" 
+                        aria-controls="installation"
+                        tabindex="0">
+                    Installation
+                </button>
+                <button class="tab-btn" 
+                        id="tab-maintenance" 
+                        data-tab="maintenance" 
+                        role="tab" 
+                        aria-selected="false" 
+                        aria-controls="maintenance"
+                        tabindex="-1">
+                    Maintenance
+                </button>
+                <button class="tab-btn" 
+                        id="tab-modernization" 
+                        data-tab="modernization" 
+                        role="tab" 
+                        aria-selected="false" 
+                        aria-controls="modernization"
+                        tabindex="-1">
+                    Modernization
+                </button>
+                <button class="tab-btn" 
+                        id="tab-repair" 
+                        data-tab="repair" 
+                        role="tab" 
+                        aria-selected="false" 
+                        aria-controls="repair"
+                        tabindex="-1">
+                    Repair
+                </button>
+            </div>
+
+            <div class="process-content">
+                <!-- Installation Process -->
+                <div class="process-tab-content active" 
+                     id="installation" 
+                     role="tabpanel" 
+                     aria-labelledby="tab-installation" 
+                     tabindex="0">
+                    <div class="process-steps">
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Initial Consultation</h3>
+                                <p>We assess your building's requirements, traffic patterns, and design preferences to recommend the perfect elevator solution.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="150">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Custom Design</h3>
+                                <p>Our engineers create detailed 3D models and technical specifications tailored to your building's architecture.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Approval & Planning</h3>
+                                <p>We handle all necessary permits and approvals while finalizing the installation timeline with minimal disruption.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Maintenance Process -->
+                <div class="process-tab-content" 
+                     id="maintenance" 
+                     role="tabpanel" 
+                     aria-labelledby="tab-maintenance" 
+                     tabindex="0" 
+                     hidden>
+                    <div class="process-steps">
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Initial Assessment</h3>
+                                <p>Comprehensive evaluation of your elevator system to identify any immediate needs or potential issues.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="150">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Preventive Maintenance</h3>
+                                <p>Regular scheduled maintenance to keep your elevators running smoothly and prevent unexpected breakdowns.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Performance Testing</h3>
+                                <p>Thorough testing of all components to ensure optimal performance and safety compliance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modernization Process -->
+                <div class="process-tab-content" 
+                     id="modernization" 
+                     role="tabpanel" 
+                     aria-labelledby="tab-modernization" 
+                     tabindex="0" 
+                     hidden>
+                    <div class="process-steps">
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>System Evaluation</h3>
+                                <p>Detailed assessment of your current elevator system to identify upgrade opportunities.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="150">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Custom Solution Design</h3>
+                                <p>Tailored modernization plan that meets your specific needs and budget.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Minimal Disruption</h3>
+                                <p>Careful planning to ensure the upgrade process causes minimal disruption to your building operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Repair Process -->
+                <div class="process-tab-content" 
+                     id="repair" 
+                     role="tabpanel" 
+                     aria-labelledby="tab-repair" 
+                     tabindex="0" 
+                     hidden>
+                    <div class="process-steps">
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Emergency Response</h3>
+                                <p>24/7 rapid response to any elevator emergencies with trained technicians.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="150">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Expert Diagnosis</h3>
+                                <p>Quick and accurate diagnosis of the issue using advanced diagnostic tools.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Quality Repairs</h3>
+                                <p>Skilled technicians perform necessary repairs using genuine parts and following safety protocols.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Partners -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h3>Technology Partners</h3>
+                <p>Bringing world-class technology to East Africa</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/2560px-Flag_of_Germany.svg.png" alt="German Technology">
+                    <h4>German Engineering</h4>
+                    <p>Cutting-edge technology and precision engineering</p>
+                </div>
+                <div class="partner-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/2560px-Flag_of_the_People%27s_Republic_of_China.svg.png" alt="Chinese Technology">
+                    <h4>Chinese Innovation</h4>
+                    <p>Advanced manufacturing and cost-effective solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive elevator and escalator solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-elevator"></i>
+                    </div>
+                    <h3>Elevator Installation</h3>
+                    <p>Professional installation of new elevators for residential and commercial buildings.</p>
+                    <a href="pages/services.html#elevator-installation" class="learn-more">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance</h3>
+                    <p>Regular maintenance to ensure your elevators and escalators operate smoothly and safely.</p>
+                    <a href="pages/services.html#maintenance" class="learn-more">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Modernization</h3>
+                    <p>Upgrade your existing systems with the latest technology for better performance.</p>
+                    <a href="pages/services.html#modernization" class="learn-more">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Repair Services</h3>
+                    <p>24/7 emergency repair services to minimize downtime and ensure safety.</p>
+                    <a href="pages/services.html#repair" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Compliance Section -->
+    <section id="safety" class="safety-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Safety & Compliance</h2>
+                <p>Your safety is our top priority</p>
+            </div>
+            
+            <div class="safety-grid">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>5+ Years</h3>
+                    <p>Trusted Since 2017</p>
+                </div>
+                
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="safety-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Standards</h3>
+                    <ul class="safety-features">
+                        <li><i class="fas fa-check-circle"></i> EN 81-20/50 Elevator Safety Standards</li>
+                        <li><i class="fas fa-check-circle"></i> Regular safety inspections and audits</li>
+                        <li><i class="fas fa-check-circle"></i> Emergency rescue operations</li>
+                        <li><i class="fas fa-check-circle"></i> Fire safety compliance</li>
+                        <li><i class="fas fa-check-circle"></i> Seismic safety measures</li>
+                    </ul>
+                </div>
+                
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="safety-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="certification">
+                            <i class="fas fa-award"></i>
+                            <span>ISO 9001:2015</span>
+                            <small>Quality Management</small>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-award"></i>
+                            <span>ISO 45001:2018</span>
+                            <small>Occupational Health & Safety</small>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-award"></i>
+                            <span>EN 81-20/50</span>
+                            <small>Elevator Safety Standards</small>
+                        </div>
+                        <div class="certification">
+                            <i class="fas fa-award"></i>
+                            <span>Local Authority</span>
+                            <small>Approved Contractor</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="safety-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="safety-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Warranty & Guarantee</h3>
+                    <div class="warranty-details">
+                        <div class="warranty-item">
+                            <i class="fas fa-check-double"></i>
+                            <div>
+                                <h4>Comprehensive Warranty</h4>
+                                <p>Up to 2 years on parts and labor for new installations</p>
+                            </div>
+                        </div>
+                        <div class="warranty-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Quality Guarantee</h4>
+                                <p>100% satisfaction guarantee on all our services</p>
+                            </div>
+                        </div>
+                        <div class="warranty-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock emergency response team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="safety-cta" data-aos="fade-up">
+                <div class="cta-content">
+                    <h3>Need a Safety Inspection?</h3>
+                    <p>Schedule a free consultation with our safety experts today.</p>
+                </div>
+                <a href="#contact" class="btn btn-primary">Request Inspection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Quality Standards -->
+    <section id="safety-standards" class="standards-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Safety & Quality Standards</h2>
+                <p>Excellence in every aspect of our operations</p>
+            </div>
+            
+            <div class="standards-grid">
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="standard-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Safety Certifications</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> ISO 9001:2015 Certified</li>
+                        <li><i class="fas fa-check"></i> ISO 45001:2018 Occupational Health & Safety</li>
+                        <li><i class="fas fa-check"></i> EN 81-20/50 Elevator Safety Standards</li>
+                        <li><i class="fas fa-check"></i> Local Regulatory Compliance</li>
+                    </ul>
+                </div>
+                
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="standard-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Quality Control</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Rigorous Testing Protocols</li>
+                        <li><i class="fas fa-check"></i> In-House Quality Assurance Team</li>
+                        <li><i class="fas fa-check"></i> Continuous Improvement Processes</li>
+                        <li><i class="fas fa-check"></i> Supplier Quality Management</li>
+                    </ul>
+                </div>
+                
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="standard-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International Compliance</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> European Safety Standards (EN)</li>
+                        <li><i class="fas fa-check"></i> American Society of Mechanical Engineers (ASME)</li>
+                        <li><i class="fas fa-check"></i> International Building Code (IBC)</li>
+                        <li><i class="fas fa-check"></i> Local Building Regulations</li>
+                    </ul>
+                </div>
+                
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="standard-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Features</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Emergency Communication Systems</li>
+                        <li><i class="fas fa-check"></i> Seismic Protection</li>
+                        <li><i class="fas fa-check"></i> Fire Safety Integration</li>
+                        <li><i class="fas fa-check"></i> Backup Power Systems</li>
+                    </ul>
+                </div>
+                
+                <div class="standard-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="standard-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Warranty</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 24-Month Comprehensive Warranty</li>
+                        <li><i class="fas fa-check"></i> 5-Year Structural Warranty</li>
+                        <li><i class="fas fa-check"></i> 10-Year Safety Component Warranty</li>
+                        <li><i class="fas fa-check"></i> Extended Warranty Options</li>
+                    </ul>
+                </div>
+                
+                <div class="standard-card cta-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Request Our Certifications</h3>
+                    <p>Download our complete certification package and quality assurance documents.</p>
+                    <a href="#contact" class="btn btn-outline">Request Documents</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance & Support Services -->
+    <section id="maintenance-services" class="maintenance-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Maintenance & Support Services</h2>
+                <p>Comprehensive care for your vertical transportation systems</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance Packages</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Preventive Maintenance Plans</li>
+                        <li><i class="fas fa-check"></i> Comprehensive Service Contracts</li>
+                        <li><i class="fas fa-check"></i> Custom Maintenance Schedules</li>
+                        <li><i class="fas fa-check"></i> Remote Monitoring Options</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Repairs</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 24/7 Emergency Response</li>
+                        <li><i class="fas fa-check"></i> Rapid On-Site Service</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Same-Day Resolution</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Modernization</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> System Upgrades</li>
+                        <li><i class="fas fa-check"></i> Technology Integration</li>
+                        <li><i class="fas fa-check"></i> Energy Efficiency Improvements</li>
+                        <li><i class="fas fa-check"></i> Aesthetic Updates</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Spare Parts</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Genuine OEM Parts</li>
+                        <li><i class="fas fa-check"></i> Local Inventory</li>
+                        <li><i class="fas fa-check"></i> Fast Delivery</li>
+                        <li><i class="fas fa-check"></i> Competitive Pricing</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3>Response Times</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Emergency: 2 Hours</li>
+                        <li><i class="fas fa-check"></i> Urgent: 4 Hours</li>
+                        <li><i class="fas fa-check"></i> Standard: 24 Hours</li>
+                        <li><i class="fas fa-check"></i> Scheduled: Your Convenience</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card cta-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Need Immediate Assistance?</h3>
+                    <p>Our team is available 24/7 for all your service needs.</p>
+                    <div class="contact-methods">
+                        <a href="tel:+254791240000" class="contact-method">
+                            <i class="fas fa-phone"></i> Mr. Rushab: +254 791 240 000
+                        </a>
+                        <a href="tel:+254706049004" class="contact-method">
+                            <i class="fas fa-phone"></i> Miss Palak: +254 706 049 004
+                        </a>
+                        <a href="mailto:info@preedoskenya.com" class="contact-method">
+                            <i class="fas fa-envelope"></i> info@preedos.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology & Innovation -->
+    <section id="technology" class="technology-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Technology & Innovation</h2>
+                <p>Driving the future of vertical transportation</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Technology Partnerships</h3>
+                    <div class="partners">
+                        <div class="partner">
+                            <img src="https://via.placeholder.com/80x50?text=German" alt="German Technology">
+                            <div>
+                                <h4>German Engineering</h4>
+                                <p>Precision and reliability from Europe's leading manufacturers</p>
+                            </div>
+                        </div>
+                        <div class="partner">
+                            <img src="https://via.placeholder.com/80x50?text=Chinese" alt="Chinese Technology">
+                            <div>
+                                <h4>Chinese Innovation</h4>
+                                <p>Cutting-edge technology at competitive prices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Energy Efficiency</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Regenerative Drives</li>
+                        <li><i class="fas fa-check-circle"></i> LED Lighting Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Sleep Mode Technology</li>
+                        <li><i class="fas fa-check-circle"></i> Energy Recovery Systems</li>
+                    </ul>
+                    <div class="energy-savings">
+                        <div class="savings-metric">
+                            <span class="number">40%</span>
+                            <span>Energy Savings</span>
+                        </div>
+                        <div class="savings-metric">
+                            <span class="number">60%</span>
+                            <span>Reduced Heat</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Smart Features</h3>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile App Control</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Traffic Management</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fingerprint"></i>
+                            <span>Biometric Access</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Analytics</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bell"></i>
+                            <span>Predictive Maintenance</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-video"></i>
+                            <span>Remote Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card roadmap" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Technology Roadmap</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="year">2023</div>
+                            <div class="milestone">
+                                <h4>IoT Integration</h4>
+                                <p>Full IoT connectivity for all new installations</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2024</div>
+                            <div class="milestone">
+                                <h4>AI Optimization</h4>
+                                <p>Machine learning for traffic prediction</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2025</div>
+                            <div class="milestone">
+                                <h4>Carbon Neutral</h4>
+                                <p>Net-zero carbon footprint operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Learn About Our Technology</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geographic Coverage -->
+    <section id="coverage" class="coverage-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Geographic Coverage</h2>
+                <p>Serving East and Central Africa with excellence</p>
+            </div>
+            
+            <div class="coverage-grid">
+                <div class="map-container" data-aos="fade-right">
+                    <div class="map" style="position: relative;">
+                        <img src="https://i.postimg.cc/BZMd5ckP/geo-map.jpg" alt="East and Central Africa Service Coverage Map" class="map-image" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <!-- Kenya Marker -->
+                        <div class="map-marker" style="top: 65%; left: 78%;">
+                            <div class="marker-pin" style="background: #3b82f6;"></div>
+                            <div class="marker-label" style="background: #3b82f6; color: white;">Kenya</div>
+                        </div>
+                        <!-- Tanzania Marker -->
+                        <div class="map-marker" style="top: 80%; left: 76%;">
+                            <div class="marker-pin" style="background: #10b981;"></div>
+                            <div class="marker-label" style="background: #10b981; color: white;">Tanzania</div>
+                        </div>
+                        <!-- Uganda Marker -->
+                        <div class="map-marker" style="top: 60%; left: 73%;">
+                            <div class="marker-pin" style="background: #f59e0b;"></div>
+                            <div class="marker-label" style="background: #f59e0b; color: white;">Uganda</div>
+                        </div>
+                        <!-- Rwanda Marker -->
+                        <div class="map-marker" style="top: 70%; left: 71%;">
+                            <div class="marker-pin" style="background: #8b5cf6;"></div>
+                            <div class="marker-label" style="background: #8b5cf6; color: white;">Rwanda</div>
+                        </div>
+                        <!-- Burundi Marker -->
+                        <div class="map-marker" style="top: 75%; left: 72%;">
+                            <div class="marker-pin" style="background: #ec4899;"></div>
+                            <div class="marker-label" style="background: #ec4899; color: white;">Burundi</div>
+                        </div>
+                        <!-- DRC Marker -->
+                        <div class="map-marker" style="top: 70%; left: 63%;">
+                            <div class="marker-pin" style="background: #ef4444;"></div>
+                            <div class="marker-label" style="background: #ef4444; color: white;">DRC</div>
+                        </div>
+                        <!-- South Sudan Marker -->
+                        <div class="map-marker" style="top: 50%; left: 72%;">
+                            <div class="marker-pin" style="background: #14b8a6;"></div>
+                            <div class="marker-label" style="background: #14b8a6; color: white;">South Sudan</div>
+                        </div>
+                        <!-- Ethiopia Marker -->
+                        <div class="map-marker" style="top: 45%; left: 77%;">
+                            <div class="marker-pin" style="background: #f97316;"></div>
+                            <div class="marker-label" style="background: #f97316; color: white;">Ethiopia</div>
+                        </div>
+                        <!-- Somalia Marker -->
+                        <div class="map-marker" style="top: 55%; left: 85%;">
+                            <div class="marker-pin" style="background: #6366f1;"></div>
+                            <div class="marker-label" style="background: #6366f1; color: white;">Somalia</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="countries-list" data-aos="fade-left">
+                    <h3>Countries We Serve</h3>
+                    <p>Preedos Kenya Limited provides comprehensive elevator and escalator solutions across East and Central Africa, with a strong presence in the following countries:</p>
+                    
+                    <div class="country-grid">
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Kenya</h4>
+                                <p>Nairobi, Mombasa, Kisumu, Nakuru</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Tanzania</h4>
+                                <p>Dar es Salaam, Mwanza, Arusha, Dodoma</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Uganda</h4>
+                                <p>Kampala, Jinja, Entebbe, Mbarara</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Rwanda</h4>
+                                <p>Kigali, Butare, Gisenyi, Ruhengeri</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Burundi</h4>
+                                <p>Bujumbura, Gitega, Ngozi, Muyinga</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>DRC</h4>
+                                <p>Kinshasa, Lubumbashi, Goma, Bukavu</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Somalia</h4>
+                                <p>Mogadishu, Hargeisa, Kismayo, Garowe</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>South Sudan</h4>
+                                <p>Juba, Malakal, Wau, Yei</p>
+                            </div>
+                        </div>
+                        <div class="country">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ethiopia</h4>
+                                <p>Addis Ababa, Dire Dawa, Bahir Dar, Mek'ele</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="coverage-cta">
+                        <p><strong>Expanding Our Reach:</strong> We're continuously expanding our service network to better serve our clients across the region.</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us for Service in Your Area</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- FAQ Category 1 -->
+                <div class="faq-category" data-aos="fade-up">
+                    <h3><i class="fas fa-cog"></i> Installation</h3>
+                    <div class="faq-accordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer">
+                                <span>How long does a new elevator installation take?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq1-answer">
+                                <p>The duration of an elevator installation depends on several factors including the type of elevator, building structure, and customization requirements. On average, a standard passenger elevator installation takes between 8-12 weeks from start to completion. This includes planning, construction, installation, and testing phases.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer">
+                                <span>What are the space requirements for installing an elevator?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq2-answer">
+                                <p>Space requirements vary based on the elevator type. For a standard hydraulic elevator, you'll typically need a minimum pit depth of 4-5 feet and an overhead clearance of about 10-12 feet. Machine room-less (MRL) elevators require less space as they don't need a separate machine room. Our team can assess your space and recommend the best solution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Category 2 -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-tools"></i> Maintenance</h3>
+                    <div class="faq-accordion">
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer">
+                                <span>How often should my elevator be serviced?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq3-answer">
+                                <p>We recommend quarterly maintenance (4 times per year) for most standard elevators. However, high-traffic elevators in commercial buildings may require monthly maintenance. Our service team will assess your specific needs and recommend an appropriate maintenance schedule during your initial consultation.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq4-answer">
+                                <span>What's included in a standard maintenance contract?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq4-answer">
+                                <p>Our standard maintenance contract includes regular inspections, lubrication of moving parts, adjustment of door operators, testing of safety features, cleaning of critical components, and 24/7 emergency call support. We also provide detailed service reports after each visit and priority scheduling for any necessary repairs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Category 3 -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-sync-alt"></i> Modernization</h3>
+                    <div class="faq-accordion">
+                        <!-- FAQ Item 5 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq5-answer">
+                                <span>How do I know if my elevator needs modernization?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq5-answer">
+                                <p>Signs that your elevator may need modernization include frequent breakdowns, increased energy consumption, outdated technology, difficulty getting parts, non-compliance with current safety codes, or if it's more than 15-20 years old. Our experts can conduct a comprehensive assessment to determine if modernization would be beneficial.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 6 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq6-answer">
+                                <span>What are the benefits of elevator modernization?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq6-answer">
+                                <p>Modernizing your elevator can provide numerous benefits including improved reliability, enhanced safety features, better energy efficiency, reduced maintenance costs, increased property value, compliance with current regulations, and improved ride comfort. Modernization is often more cost-effective than complete replacement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Category 4 -->
+                <div class="faq-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Safety & Compliance</h3>
+                    <div class="faq-accordion">
+                        <!-- FAQ Item 7 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq7-answer">
+                                <span>What safety standards do your elevators comply with?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq7-answer">
+                                <p>All our elevators comply with the latest safety standards including EN 81-20/50, ASME A17.1/CSA B44, and local building codes. We ensure that every installation meets or exceeds these standards through rigorous testing and quality control measures. Our team stays current with all regulatory changes to ensure continuous compliance.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 8 -->
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq8-answer">
+                                <span>What should I do if my elevator stops working?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="faq-answer" id="faq8-answer">
+                                <p>If you're inside the elevator when it stops, stay calm and use the emergency phone or alarm button. Do not attempt to force the doors open. If you're outside and someone is trapped, reassure them that help is on the way and call our 24/7 emergency service line immediately. Our team typically responds within 60 minutes for emergency calls.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta" data-aos="fade-up">
+                <div class="cta-content">
+                    <h3>Still have questions?</h3>
+                    <p>Our team is here to help. Contact us for more information about our services.</p>
+                </div>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request a Quote Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Request a Quote</h2>
+                <p>Get a free, no-obligation quote for your elevator project</p>
+            </div>
+            
+            <div class="quote-container">
+                <div class="quote-form" data-aos="fade-right">
+                    <form id="quoteForm" class="quote-form-inner">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type <span class="required">*</span></label>
+                            <select id="project-type" name="project-type" required>
+                                <option value="" disabled selected>Select project type</option>
+                                <option value="new-installation">New Elevator Installation</option>
+                                <option value="modernization">Elevator Modernization</option>
+                                <option value="maintenance">Maintenance Contract</option>
+                                <option value="repair">Repair Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="floors">Number of Floors <span class="required">*</span></label>
+                                <input type="number" id="floors" name="floors" min="2" max="100" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="capacity">Capacity (kg) <span class="required">*</span></label>
+                                <input type="number" id="capacity" name="capacity" min="250" step="50" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your project, including any specific requirements or questions you may have."></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter">Subscribe to our newsletter for updates and promotions</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Get Free Quote</button>
+                    </form>
+                </div>
+                
+                <div class="quote-info" data-aos="fade-left">
+                    <div class="info-card">
+                        <h3>Why Get a Quote?</h3>
+                        <p>Our team of experts will review your requirements and provide you with a detailed, competitive quote tailored to your specific needs.</p>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>No Hidden Costs</h4>
+                                <p>Transparent pricing with no surprises</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Quick Response</h4>
+                                <p>Get a response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expert Advice</h4>
+                                <p>Guidance from our elevator specialists</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h4>Prefer to talk?</h4>
+                            <p><i class="fas fa-phone"></i> +254 791 240 000</p>
+                            <p><i class="fas fa-envelope"></i> quotes@preedos.com</p>
+                            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-medal"></i>
+                    <h3>5+ Years Experience</h3>
+                    <p>Since 2017</p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>500+ Projects</h3>
+                    <p>Across East Africa</p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Emergency service available</p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-smile"></i>
+                    <h3>98% Satisfaction</h3>
+                    <p>From our clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">What Our Clients Say</h2>
+                <p style="color: #cbd5e1;">Trusted by leading businesses across Kenya</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Preedos installed our building's elevators and the service has been exceptional. Their team is professional, punctual, and pays great attention to detail."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/client1.jpg" alt="James Mwangi">
+                        <div>
+                            <div>James Mwangi</div>
+                            <div style="color: #e5e7eb; font-weight: normal; font-size: 0.9rem;">Property Manager, UAP Towers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "The maintenance service is top-notch. We've had zero downtime since we started working with Preedos. Their 24/7 support gives us peace of mind."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/client2.jpg" alt="Sarah K.">
+                        <div>
+                            <div>Sarah K.</div>
+                            <div style="color: #e5e7eb; font-weight: normal; font-size: 0.9rem;">Hotel Owner, The Grand Nairobi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Their team went above and beyond to complete our project on time. The modernized elevators have significantly improved our building's value."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/client3.jpg" alt="David O.">
+                        <div>
+                            <div>David O.</div>
+                            <div style="color: #e5e7eb; font-weight: normal; font-size: 0.9rem;">Construction Manager, Prime Properties</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-pattern"></div>
+        <div class="container">
+            <h2>Ready to Elevate Your Building?</h2>
+            <p>Contact us today for a free consultation and discover how we can help with your vertical transportation needs.</p>
+            <a href="#contact" class="btn" style="background: #fbbf24; color: #1e3a8a; font-size: 1.2rem; padding: 1rem 3rem;">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get a Free Quote</h2>
+                <p>Contact us today to discuss your elevator and escalator needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>+254 700 000000</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@preedos.co.ke</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>Prestige Plaza, 4th Floor, 54 Muthithi Rd, Nairobi, Kenya</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+                <form id="quote-form" class="quote-form" data-aos="fade-left">
+                    <h3>Send Us a Message</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="elevator-installation">Elevator Installation</option>
+                            <option value="escalator-maintenance">Escalator Maintenance</option>
+                            <option value="modernization">Modernization</option>
+                            <option value="repair">Repair Services</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Preedos</h3>
+                    <p>Leading provider of elevator and escalator solutions in Kenya, committed to safety, innovation, and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Prestige Plaza, 4th Floor, 54 Muthithi Rd, Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> Mr. Rushab: +254 791 240 000</p>
+                    <p><i class="fas fa-phone"></i> Miss Palak: +254 706 049 004</p>
+                    <p><i class="fas fa-envelope"></i> info@preedoskenya.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Preedos Kenya Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-widget">
+        <div class="whatsapp-header">
+            <div class="whatsapp-avatar">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="whatsapp-info">
+                <h4>Preedos Support</h4>
+                <p>Chat with our team</p>
+            </div>
+            <button class="whatsapp-close" aria-label="Close chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="whatsapp-body" style="padding: 1rem;">
+            <p style="margin: 0 0 1rem; font-size: 0.9rem; color: #666;">Hello! How can we help you today? Please choose a contact:</p>
+            
+            <a href="https://wa.me/254791240000" target="_blank" class="whatsapp-contact-option" style="display: flex; align-items: center; padding: 0.75rem; background: #f5f5f5; border-radius: 8px; margin-bottom: 0.75rem; text-decoration: none; color: #333; transition: all 0.3s ease;">
+                <div style="width: 40px; height: 40px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; flex-shrink: 0;">
+                    <i class="fab fa-whatsapp" style="color: white; font-size: 1.25rem;"></i>
+                </div>
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 0.25rem;">Mr. Rushab</div>
+                    <div style="font-size: 0.85rem; color: #666;">+254 791 240 000</div>
+                </div>
+                <div style="margin-left: auto; color: #666;">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/254706049004" target="_blank" class="whatsapp-contact-option" style="display: flex; align-items: center; padding: 0.75rem; background: #f5f5f5; border-radius: 8px; margin-bottom: 0.75rem; text-decoration: none; color: #333; transition: all 0.3s ease;">
+                <div style="width: 40px; height: 40px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; flex-shrink: 0;">
+                    <i class="fab fa-whatsapp" style="color: white; font-size: 1.25rem;"></i>
+                </div>
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 0.25rem;">Miss Palak</div>
+                    <div style="font-size: 0.85rem; color: #666;">+254 706 049 004</div>
+                </div>
+                <div style="margin-left: auto; color: #666;">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+            
+            <div style="font-size: 0.8rem; color: #999; margin-top: 1rem; text-align: center; padding: 0.5rem 0;">
+                <i class="fas fa-clock"></i> Typically replies within minutes
+            </div>
+        </div>
+    </div>
+    
+    <button class="whatsapp-float" aria-label="Open chat" aria-expanded="false">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-pulse"></span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Portfolio Filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            // Trigger reflow for animation
+                            void item.offsetHeight;
+                            item.style.animation = 'fadeInUp 0.5s ease-out forwards';
+                        } else {
+                            item.style.animation = 'fadeOut 0.3s ease-out forwards';
+                            // Wait for animation to complete before hiding
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+
+        // Add CSS for fadeInUp animation if not already present
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes fadeOut {
+                from {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                to {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            }
+            .portfolio-item {
+                animation: fadeInUp 0.5s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Preedos Kenya Limited</title>
+    <meta name="description" content="Get in touch with Preedos Kenya Limited for all your elevator and escalator needs. Our team is ready to assist you with installations, maintenance, and more.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .contact-method {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .contact-method:hover {
+            transform: translateY(-5px);
+        }
+        .contact-method i {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .map-container {
+            height: 400px;
+            margin: 3rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Preedos Kenya</div>
+                <div class="emergency-contact">
+                    <i class="fas fa-phone-alt"></i> Emergency: +254 700 000000
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main>
+        <!-- Contact Header -->
+        <section class="hero" style="background: linear-gradient(rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.9)), url('../images/contact-bg.jpg');">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch for all your elevator and escalator needs</p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>We'd Love to Hear From You</h2>
+                    <p>Our team is ready to assist you with any inquiries or service requests</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Our Location</h3>
+                        <p>Prestige Plaza, 4th Floor<br>54 Muthithi Rd, Nairobi, Kenya</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+254 700 000000 (Office)<br>+254 711 000000 (Emergency)</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@preedos.co.ke<br>sales@preedos.co.ke</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8084773952877!2d36.82115931475399!3d-1.2884448359772735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d4b9b5c5a5%3A0x1e3a4b5d5d5d5d5d!2sPrestige%20Plaza!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="color: #1e3a8a; margin-bottom: 1.5rem; text-align: center;">Send Us a Message</h3>
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <button type="submit" class="btn" style="padding: 1rem 3rem;">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="content-section" style="background: #1e3a8a; color: white; text-align: center;">
+            <div class="container">
+                <h2>24/7 Emergency Service</h2>
+                <p style="max-width: 700px; margin: 1rem auto 2rem; font-size: 1.2rem;">
+                    For elevator emergencies, our team is available around the clock to assist you.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <a href="https://wa.me/254791240000" class="btn" style="background: #25D366; color: white; display: inline-flex; align-items: center; gap: 0.5rem;" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Mr. Rushab (WhatsApp)
+                    </a>
+                    <a href="https://wa.me/254706049004" class="btn" style="background: #128C7E; color: white; display: inline-flex; align-items: center; gap: 0.5rem;" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Miss Palak (WhatsApp)
+                    </a>
+                    <a href="tel:+254791240000" class="btn" style="background: #ef4444; color: white; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-phone-alt"></i> Call Mr. Rushab
+                    </a>
+                    <a href="tel:+254706049004" class="btn" style="background: #fbbf24; color: #1e3a8a; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-phone-alt"></i> Call Miss Palak
+                    </a>
+                    <a href="mailto:info@preedoskenya.com" class="btn" style="background: #8b5cf6; color: white; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Preedos</h3>
+                    <p>Leading provider of elevator and escalator solutions in Kenya, committed to safety, innovation, and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 700 000000</p>
+                    <p><i class="fas fa-envelope"></i> info@preedos.co.ke</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Preedos Kenya Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            
+            // Here you would typically send the form data to a server
+            console.log('Contact form submitted:', formObject);
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
